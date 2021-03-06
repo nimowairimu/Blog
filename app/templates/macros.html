@@ -1,0 +1,11 @@
+{% macro displayQuoteList(quote_list) %}
+
+    {% for quote in quote_list %}
+        <div class="card">
+            <p >{{ quote.quote }}" </p>
+                    <h6>{{ quote.author}}</h6>
+        </div>
+
+    {% endfor %}
+
+{% endmacro %}
