@@ -5,7 +5,7 @@ from app import app
 import urllib.request,json
 
 
-Movie = movie.Movie
+Quote = quote.Quote
 
 # Getting api key
 api_key = app.config['QUOTE_API_KEY']
@@ -16,8 +16,7 @@ base_url = app.config[" QUOTE_API_BASE_URL"]
 
 def get_quotes():
     get_movies_url = base_url.format(api_key)
-
-#     response = requests.get('http://quotes.stormconsultancy.co.uk/random.json')
+    response = requests.get('http://quotes.stormconsultancy.co.uk/random.json')
     if response.status_code == 200:
         quote = response.json()
         return quote
