@@ -10,8 +10,8 @@ class QuoteTest(unittest.TestCase):
         '''
         self.new_quote = Quote('Jeremy','34','You got this')
 
-        def test_instance(self):
-            self.assertTrue(isinstance(self.new_quote,Quote))
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_quote,Quote))
 
 if __name__ == '__main__':
     unittest.main()
