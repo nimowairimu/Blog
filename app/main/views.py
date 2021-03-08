@@ -1,7 +1,7 @@
 from flask import render_template,request
 from app.main import main
-from ..request import get_quotes
-from app
+from ..requests import get_quotes
+
 
 @main.route('/')
 def index():

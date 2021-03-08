@@ -1,17 +1,16 @@
-from app import app
+from app import main
 import urllib.request,json
-from .models import quote
-from app import app
+from .models import Quote
+
 import urllib.request,json
 
 
-Quote = quote.Quote
+# Quote = quote.Quote
 
 # Getting api key
-api_key = app.config['QUOTE_API_KEY']
-
+api_key = 'QUOTE_API_KEY'
 # Getting the movie base url
-base_url = app.config[" QUOTE_API_BASE_URL"]
+base_url = " QUOTE_API_BASE_URL"
 
 
 def get_quotes():
