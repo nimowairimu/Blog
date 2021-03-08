@@ -2,6 +2,8 @@ from flask import render_template,request
 from app.main import main
 from ..requests import get_quotes
 from flask_login import login_required
+from .forms import BlogForm,UserProfile
+from .. import db
 
 
 @main.route('/')
@@ -37,8 +39,8 @@ def profile():
 
 @main.route('/user/<name>/updateprofile', methods = ['POST','GET'])
 @login_required
-def updateprofile(name):
-    form = UserProfile()
+def update_profile(name):
+    form = UpdateProfile()
     user = User.query.filter_by(username = name).first()
     if user == None:
         abort(404)
@@ -46,7 +48,7 @@ def updateprofile(name):
         user.bio = form.bio.data
         user.save()
         return redirect(url_for('.profile',name = name))
-    return render_template('profile/updateprofile.html',form =form)
+    return render_template('profile/update.html',form =form)
 
 @main.route('/new_post', methods=['POST','GET'])
 @login_required
