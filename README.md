@@ -7,11 +7,16 @@
 This is a web application that allows various users to submit a one minute pitch. Users can also be able to view other pitches from different categories ie Enterpreneurship, Interview and Sales, comment on the pitches posted and vote. 
 
 ## User Stories
-* As a user I would like to view the different categories.
-* As a user I would like to see the pitches other people have posted.
-* As a user I would like to comment on the different pitches and leave feedback.
-* As a user I would like to submit a pitch in any category.
-* As a user I would like to vote on the pitch they liked and give it a downvote or upvote.
+* As a user, I would like to view the blog posts on the site
+* As a user, I would like to comment on blog posts
+* As a user, I would like to view the most recent posts
+* As a user, I would like to an email alert when a new post is made by joining a subscription.
+* As a user, I would like to see random quotes on the site
+* As a writer, I would like to sign in to the blog.
+* As a writer, I would also like to create a blog from the application.
+* As a writer, I would like to delete comments that I find insulting or degrading.
+* As a writer, I would like to update or delete blogs I have created.
+
 ## Specifications
 
 | Behaviour  |	Input       |	  Output      |
