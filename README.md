@@ -34,7 +34,7 @@ This is a web application that allows various users to submit a one minute pitch
 Python3.6
 ## Setup Instructions
 1. ``git clone https://github.com/nimowairimu/Blog.git``
-1. `` cd Pitches``
+1. `` cd Blog``
 1. `` python3.6 -m venv virtual`` (install virtual environment)
 1. `` source virtual/bin/activate``To activate the virtual environment
 1. ``python3.6 -m pip install -r requirements.txt``  To install all dependencies.
