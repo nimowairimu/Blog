@@ -8,8 +8,7 @@
 This is a flask web application that allows users to post their blogs. They they have create an account then log in to start creating blogs of their choice
 
 
-## Live Link 
-You can find the application [Here](fel-blogger.herokuapp.com/)
+
 ## User Stories
 * As a user, I would like to view the blog posts on the site
 * As a user, I would like to comment on blog posts
