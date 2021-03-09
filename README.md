@@ -23,15 +23,17 @@ This is a web application that allows various users to submit a one minute pitch
 |------------|--------------|-----------------|
 |To Sign up | Click Sign up | Registers a new user into the application |
 |To Sign In | Click Sign In | For sers who already have accounts to sign into the app|
-|Display Various Pitch Categories|	N/A	|Various pitches grouped by categories are displayed|
-|Display pitches |	Click on a Category	|A page with a list of pitches from the selected category|
-|Add new pitch |	'Click To Pitch' |	User Should register/sign in to add new pitch|
-|View Pitches |Click on a pitch	category|View a pitch,add upvote,downvote and comments|
+|Display Various Blog Categories| Click Blogs 	|Various Blogs already posted will be displayed |
+|Add your blog |	Click on add blog |Redirects you to a form with title nad content textarea |
+|View Random Quotes |	Click quotes  | View random quotes from a quotes api|
+|Back to Homepage  |Click home |Redirects a user/subscriber back to home page of the application |
+|Add Comment | Click on Add comments | Adds a comment on a blog post |
+| Delete Blog  |Click on delete Blog | Delete  blogs that a user finds insulting |
 
 ## Prerequisites
 Python3.6
 ## Setup Instructions
-1. ``git clone https://github.com/nimowairimu/flask-week-3-.git``
+1. ``git clone https://github.com/nimowairimu/Blog.git``
 1. `` cd Pitches``
 1. `` python3.6 -m venv virtual`` (install virtual environment)
 1. `` source virtual/bin/activate``To activate the virtual environment
