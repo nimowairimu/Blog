@@ -5,14 +5,28 @@ from wtforms.validators import Required,Email
 from flask_login import current_user
 from ..models import User
 
+class ReviewForm(FlaskForm):
+    title = StringField('Review title',validators=[Required()])
+    review = TextAreaField('Blog review', validators=[Required()])
+    submit = StringField('Submit')
 class UpdateProfile(FlaskForm):
-    username = StringField('Enter Your Username', validators=[Required()])
-    email = StringField('Email Address', validators=[Required(),Email()])
-    bio = TextAreaField('Write a brief bio about you.',validators = [Required()])
-    profile_pic_path = FileField('profile picture', validators=[FileAllowed(['jpg','png'])])
-    submit = SubmitField('Update')
-
+    bio = TextAreaField('Tell us about you.',validators = [Required()])
+    submit = SubmitField('Submit')
+class CategoryForm(FlaskForm):
+    '''
+    Class to create a wtf form for creating a blog
+    '''
+    name =  StringField('Category Name', validators=[Required()])
+    submit = SubmitField('Create')
+class CommentForm(FlaskForm):
+    '''
+    Class to create a wtf form for creating a blog
+    '''
+    opinion = TextAreaField('WRITE COMMENT')
+    submit = SubmitField('SUBMIT')
 class BlogForm(FlaskForm):
-    title = StringField('Title',validators=[Required()])
-    content = TextAreaField('Blog Content',validators=[Required()])
-    submit = SubmitField('Post')
+    '''
+    Class to create a wtf form for creating a pitch
+    '''
+    content = TextAreaField('YOUR BLOG')
+    submit = SubmitField('CREATE')

@@ -1,16 +1,11 @@
 {% extends 'base.html'%}
-
 {% block content %}
 <div class="container">
-
-    <div class="row">
-        <h1>Quote of the day</h1>
-
-            <p>{{ quote.quote }}</p>
-
-            <p style="text-align: center;"> {{ quote.author }}</p>
-            
-
-    </div>
+<blockquote>
+    <h2>{{quote.author}}</h2>
+    <hr>
+    <p>~{{quote.quote}}</p>
+</blockquote>
 </div>
+
 {% endblock %}
