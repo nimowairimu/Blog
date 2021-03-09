@@ -5,8 +5,11 @@
   There were no contributors apart from Irene Mungai only.
 
 ## Description
-This is a web application that allows various users to submit a one minute pitch. Users can also be able to view other pitches from different categories ie Enterpreneurship, Interview and Sales, comment on the pitches posted and vote. 
+This is a flask web application that allows users to post their blogs. They they have create an account then log in to start creating blogs of their choice
 
+
+## Live Link 
+You can find the application [Here](fel-blogger.herokuapp.com/)
 ## User Stories
 * As a user, I would like to view the blog posts on the site
 * As a user, I would like to comment on blog posts
