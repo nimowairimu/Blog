@@ -1,10 +1,11 @@
-from flask import render_template,request
+from flask import render_template,redirect,url_for,abort,request,flash
 from app.main import main
 from ..requests import get_quotes
-from flask_login import login_required
-from .forms import BlogForm,UserProfile
+from flask_login import login_required,current_user
+from .forms import BlogForm,UpdateProfile
 from .. import db
-
+from app.models import User,Blog,Comment,Subscriber
+from ..email import mail_message
 
 @main.route('/')
 def index():
@@ -13,8 +14,10 @@ def index():
     View root page function that returns the index page and its data
     '''
     quotes = get_quotes()
-    return render_template('index.html',quote = quotes)
-
+    page = request.args.get('page',1, type = int )
+    blogs = Blog.query.order_by(Blog.posted.desc()).paginate(page = page, per_page = 3)
+    return render_template('index.html', quote = quotes,blogs=blogs)
+    
 @main.route('/profile',methods = ['POST','GET'])
 @login_required
 def profile():

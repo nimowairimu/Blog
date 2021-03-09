@@ -20,7 +20,14 @@
     <div class="card testimonial-card">
     <div class="card-up indigo lighten-1"></div>
     <div class="avatar mx-auto white">
-      <img src="{{profile_pic_path}}" class="rounded-circle account-img mt-2" alt="woman avatar">
+      {% if user.profile_pic_path %}
+
+      <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
+  
+      {%else%}
+      <p>No profile picture</p>
+  
+      {% endif %}
     </div>
     <div class="card-body">
       <h4 class="card-title text-center">{{current_user.username|title}}</h4>
