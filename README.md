@@ -1,4 +1,5 @@
 # Blog
+
 ## Author
 > Irene Wairimu Mungai, A student at Moringa School.
   There were no contributors apart from Irene Mungai only.
@@ -41,13 +42,6 @@ Python3.6
 1.  Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
 `` ./start.sh`` To run the application on your local server 
 
-
-## How Pitch App  works
-A user needs to sign up to the Pitch App
-A user the needs to sign in
-See the various categories there are of Pitches 
-Give a vote for the Pitches 
-Post their own Pitches in any category picked.
 
 ## Contacts Informantion
  - You can provide feedback or raise any issues/ bugs through my [Email](nimowairimu@gmail.com)
